@@ -1,119 +1,149 @@
-    @font-face {
-        font-family: minhafonte;
-        src: url('../fonts/fonte1.otf');
-    }
+@font-face {
+    font-family: minhafonte;
+    src: url('../fonts/fonte1.otf');
+}
 
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background-color: black;
     font-family: minhafonte, sans-serif;
+    color: white;
 }
-header{
-    padding: 20px;
-    background-color: black;
-    font-weight: 500;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+
+header {
+    padding: 40px 20px;
+    text-align: center;
 }
-h1{
+
+h1 {
     text-shadow: 1px 1px 1px red;
     color: rgb(214, 87, 129);
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8rem;
 }
-h3{
-        background-color: rgb(235, 100, 147);
-        color: rgb(210, 122, 200);
-        text-shadow: 1px 1px 1px black;
-        font-size: 1.6em;
-}
-button{
+
+main {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw; 
+    max-width: 1000px;
+    box-shadow: 1px 1px 10px 1px rgb(213, 86, 130);
+    background-color: rgb(235, 100, 147);
+    padding: 20px;
+}
+
+.card {
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#texto {
+    width: 90vw;
+    max-width: 800px;
+    margin: 20px 0;
+}
+
+p {
+    padding: 25px;
+    box-shadow: 1px 1px 10px 1px rgb(213, 86, 130);
+    background-color: rgb(235, 100, 147);
+    color: black;
+    line-height: 1.6;
+    border-radius: 8px;
+}
+
+span {
+    color: white;
+    font-weight: bold;
+}
+
+
+#containerdois {
+    padding: 20px;
+    box-shadow: 1px 1px 10px 1px rgb(213, 86, 130);
+    background-color: rgb(235, 100, 147);
+    width: 90vw;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    border-radius: 8px;
+}
+
+h3 {
+    background-color: transparent;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.containerbotao {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    position: relative;
+}
+
+button {
+    padding: 15px;
     background-color: plum;
-    width: 200px;
+    width: 120px;
     border-radius: 10px;
     color: purple;
     cursor: pointer;
     border: 1px solid purple;
     box-shadow: 1px 1px 10px 1px purple;
-    margin-right: 20px;
-}
-button:hover{
-    background-color: pink;
-    font-size: 1em;
-}
-main{
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-img{
-    width: 200px;
-    height: 200px;
-}
-.card{
-    box-shadow: 1px 1px 10px 1px black;
-    width: 200px;
-    height: 200px;
-    margin-left: 40px;
-    margin-top: 10px;
-}
-#container{
-    display: flex;
-    flex-wrap: wrap;
-    width: 50vw;
-    box-shadow: 1px 1px 10px 1px rgb(213, 86, 130);
-    background-color: rgb(235, 100, 147);
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-#nao{
-    position: absolute;
-}
-#texto{
-    width: 50vw;
-    padding: 10px;
-}
-p{
-    padding: 20px;
-    box-shadow: 1px 1px 10px 1px rgb(213, 86, 130);
-    background-color: rgb(235, 100, 147);
-        background-size: cover;
-    background-repeat: no-repeat;
-        color: black;
-}
-span{
-     background-color: rgb(235, 100, 147);
-    color: white;
-}
-#containerdois{
-    padding: 20px;
-    box-shadow: 1px 1px 10px 1px rgb(213, 86, 130);
-    background-color: rgb(235, 100, 147);
-    width: 50vw;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 50vh;
-}
-.containerbotao{
-    background-color: rgb(235, 100, 147);
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    width: 50vw;
-    position: relative;
+    font-weight: bold;
 }
 
-#video{
-        box-shadow: 1px 1px 10px 1px rgb(213, 86, 130);
-    background-color: rgb(235, 100, 147);
-    padding-top: 20px;
-    padding-bottom: 20px;
+#nao {
+    position: absolute;
 }
-video{
+#video-container {
+    width: 90vw;
+    max-width: 640px;
+    box-shadow: 1px 1px 10px 1px rgb(213, 86, 130);
     background-color: rgb(235, 100, 147);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    .card { width: 200px; height: 200px; }
+    button { width: 200px; }
+    #container, #texto, #containerdois { width: 60vw; }
 }
